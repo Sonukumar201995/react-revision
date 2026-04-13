@@ -1,14 +1,10 @@
-import Login, { Profile, Setting } from "./UserCpmponent";
-
-export default function App() {
-  
-  return (
+export default function App()
+{
+  let name="sonu kumar"
+  return(
     <>
-      <h1>React import and export component</h1>
-      <Login/>
-      <Profile/>
-      <Setting/>
+    <h2>jsx in react {name}</h2>
+    <button onClick={()=>alert("hello")}> click</button>
     </>
   )
 }
-
