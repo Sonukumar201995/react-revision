@@ -1,19 +1,19 @@
 import { useState } from "react";
-import Counter from "../Counter";
+import User from "../User";
 
-function App() {
-  const [fruit, setFruit] = useState("Apple");
-  const handleFruit = () => {
-    setFruit("Banana")
-  }
+export default function App() {
+  const [display, setDisplay] = useState(true);
+
   return (
     <div>
-      <h1>State in React</h1>
-      <h1>{fruit}</h1>
-      <button onClick={handleFruit}>change name</button>
-      <Counter/>
+      <h1>Toggle in React js</h1>
+      <button onClick={() => setDisplay(!display)}>Toggle</button>
+
+      {/* {display ? <h1>Sonu Kumar</h1> : null} */}
+
+      {
+        display ? <User/>:null
+      }
     </div>
   );
 }
-
-export default App;
