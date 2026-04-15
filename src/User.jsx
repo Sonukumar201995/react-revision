@@ -1,10 +1,8 @@
-export default function User({ name, age, email, address }) {
-  return (
+export default function User({name="Your Name"})
+{
+  return(
     <div>
-      <p>Name: {name}</p>
-      <p>Age: {age}</p>
-      <p>Email: {email}</p>
-      <p>Address: {address}</p>
+      <h2>Hi,{name}</h2>
     </div>
-  );
+  )
 }

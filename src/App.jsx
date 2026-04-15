@@ -1,17 +1,17 @@
-import Student from "./Student"
-import User from "./User"
+import User from "./User";
+import Wrapper from "./Wrapper";
 
 export default function App()
 {
   return(
     <div>
-      {/* <h1>props in react js</h1>
-      <User name="sonu kumar" 
-      age={31} 
-      email="sonu@gmail.com" 
-      address="New Delhi"/> */}
+      <h1>more about props</h1>
+      {/* <User name="sonu kumar"/>
+      <User /> */}
 
-      <Student name="sonu kumar"/>
+      <Wrapper color="orange"> <h1>Hello EveryOne</h1></Wrapper>
+      <Wrapper color="green"> <h1>Hello EveryOne</h1></Wrapper>
+      <Wrapper color="yellow"> <h1>Hello EveryOne</h1></Wrapper>
     </div>
   )
 }
