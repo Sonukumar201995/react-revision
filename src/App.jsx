@@ -1,17 +1,14 @@
-import User from "./User";
-import Wrapper from "./Wrapper";
+import { useState } from "react"
 
 export default function App()
 {
+  const[val,setVal]=useState("")
   return(
     <div>
-      <h1>more about props</h1>
-      {/* <User name="sonu kumar"/>
-      <User /> */}
-
-      <Wrapper color="orange"> <h1>Hello EveryOne</h1></Wrapper>
-      <Wrapper color="green"> <h1>Hello EveryOne</h1></Wrapper>
-      <Wrapper color="yellow"> <h1>Hello EveryOne</h1></Wrapper>
+      <h2>Get input field value</h2>
+      <input type="text" value={val} onChange={(event)=>setVal(event.target.value)} placeholder="Enter Your Name"/>
+      <h2>{val}</h2>
+      <button onClick={()=>setVal("")}>clear</button>
     </div>
   )
 }
